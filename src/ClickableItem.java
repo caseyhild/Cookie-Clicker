@@ -50,11 +50,16 @@ public class ClickableItem {
         count++;
         cost = baseCost + count * baseCost * 0.1; // update cost after charging previous cost
     }
+
     public void setRect(Rectangle r) {
         this.rect = r;
     }
+
     public Rectangle getRect() { return rect; }
+
     public int getCount() { return count; }
+
     public double getCost() { return cost; }
+
     public double getCPS() { return cps; }
 }
